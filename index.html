@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <title>Heart</title>
-</head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        background: #000;
-    }
-
-    .centre {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-
-    .heart {
-        color: #ff4033;
-        font-size: 5rem;
-        animation: heartbeat 0.5s infinite alternate;
-        transform-origin: center;
-    }
-
-    @keyframes heartbeat {
-        to {
-            transform: scale(1.5);
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background-color: #000;
         }
-    }
-</style>
-
+        .centre{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .heart{
+            color: #fff;
+            font-size: 6rem;
+            animation: heartbeat 0.3s infinite alternate;
+        }
+        .fa-heart{
+            text-shadow:0 0 50px #ff004c,
+                        0 0 100px #ff004c,
+                        0 0 150px #ff004c,
+                        0 0 200px #ff004c,
+                        0 0 250px #ff004c;
+        }
+        
+        @keyframes heartbeat {
+            to{
+                transform: scale(1.4);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
 <body>
     <div class="centre">
-        <h1 class="heart"><i class="fa-solid fa-heart"></i></h1>
+       <h1 class="heart">I <i class="fa-solid fa-heart"></i> U</h1> 
     </div>
-
 </body>
-
 </html>
